@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5"
+    android:orientation="vertical">
+
+    <com.sdsmdg.harjot.materialshadows.MaterialShadowViewWrapper
+        android:id="@+id/shadow_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+        android:visibility="gone"
+        app:shadowOffsetX="0"
+        app:shadowOffsetY="10"
+        tools:context="com.sdsmdg.harjot.materialshadowsdemo.MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:elevation="5dp"
+            android:padding="10dp"
+            android:text="2342131"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </com.sdsmdg.harjot.materialshadows.MaterialShadowViewWrapper>
+
+    <com.sdsmdg.harjot.materialshadows.MaterialShadowViewWrapper
+        android:id="@+id/shadow_wrapper2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+        android:visibility="gone"
+        app:shadowOffsetX="0"
+        app:shadowOffsetY="0"
+        tools:context="com.sdsmdg.harjot.materialshadowsdemo.MainActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:elevation="5dp"
+            android:padding="10dp"
+            android:text="121212313"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </com.sdsmdg.harjot.materialshadows.MaterialShadowViewWrapper>
+
+    <RelativeLayout
+        android:id="@+id/shadow_wrapper1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+        android:visibility="gone"
+        tools:context="com.sdsmdg.harjot.materialshadowsdemo.MainActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:elevation="5dp"
+            android:padding="10dp"
+            android:text="121212313"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <com.sdsmdg.harjot.materialshadowsdemo.ShadowContainer
+        android:id="@+id/s"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:containerCornerRadius="0dp"
+        app:containerDeltaLengthBottom="0dp"
+        app:containerDeltaLengthLeft="0dp"
+        app:containerDeltaLengthRight="0dp"
+        app:containerDeltaLengthTop="0dp"
+        app:containerShadowColor="#88000000"
+        app:containerShadowRadius="2dp"
+        app:enable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="121212313"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </com.sdsmdg.harjot.materialshadowsdemo.ShadowContainer>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="左边距" />
+
+    <SeekBar
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上边距" />
+
+    <SeekBar
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="右边距" />
+
+    <SeekBar
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下边距" />
+
+    <SeekBar
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:tooltipText="22212" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="阴影圆角" />
+
+    <SeekBar
+        android:id="@+id/con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:tooltipText="22212" />
+
+    <TextView
+        android:id="@+id/sc_siz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="阴影范围" />
+
+    <SeekBar
+        android:id="@+id/shco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:progress="0"
+        android:tooltipText="22212" />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="#88000000" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/dp_50"
+        android:paddingBottom="@dimen/dp_50">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gd1"
+            android:layout_width="1dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_white_btn"
+            android:foreground="@null"
+            android:gravity="center"
+            android:text="白色按钮"
+            android:textColor="@color/bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="3.1:1"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.42" />
+
+        <com.sdsmdg.harjot.materialshadowsdemo.ShadowContainer
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            app:containerCornerRadius="@dimen/dp_18"
+            app:containerDeltaLengthBottom="@dimen/dp_40"
+            app:containerDeltaLengthLeft="@dimen/dp_18"
+            app:containerDeltaLengthRight="@dimen/dp_18"
+            app:containerDeltaLengthTop="4dp"
+            app:containerShadowColor="#443774ff"
+            app:containerShadowRadius="@dimen/dp_18"
+            app:deltaY="@dimen/dp_16"
+            app:enable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="3.1:1"
+            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.42">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_btn"
+                android:onClick="setColor"
+                android:padding="@dimen/dp_6"
+                android:text="设置阴影颜色"
+                android:textColor="#fff" />
+        </com.sdsmdg.harjot.materialshadowsdemo.ShadowContainer>
+    </android.support.constraint.ConstraintLayout>
+
+
+    <CheckBox
+        android:id="@+id/cb_calculate_async"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Render async"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/cb_show_when_all_ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Show shadows simultaneously"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_re_render"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Re-render All"
+        android:visibility="gone" />
+
+
+</LinearLayout>

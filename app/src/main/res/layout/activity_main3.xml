@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:id="@+id/gd1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_white_btn"
+        android:foreground="@null"
+        android:gravity="center"
+        android:text="白色按钮"
+        android:textColor="@color/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3.1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/gd1"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_24"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.sdsmdg.harjot.materialshadowsdemo.ShadowContainer
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        app:containerCornerRadius="@dimen/dp_18"
+        app:containerDeltaLengthBottom="@dimen/dp_40"
+        app:containerDeltaLengthLeft="@dimen/dp_18"
+        app:containerDeltaLengthRight="@dimen/dp_18"
+        app:containerDeltaLengthTop="4dp"
+        app:containerShadowColor="#443774ff"
+        app:containerShadowRadius="@dimen/dp_18"
+        app:deltaY="@dimen/dp_16"
+        app:enable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3.1:1"
+        app:layout_constraintLeft_toLeftOf="@id/gd1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="@dimen/_dp_8"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn"
+            android:onClick="setColor"
+            android:padding="@dimen/dp_6"
+            android:text="设置阴影颜色"
+            android:textColor="#fff" />
+    </com.sdsmdg.harjot.materialshadowsdemo.ShadowContainer>
+</android.support.constraint.ConstraintLayout>
